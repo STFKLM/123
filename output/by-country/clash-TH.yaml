@@ -19,6 +19,32 @@ proxies:
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
 - name: 🇹🇭 TH 02 - xiaohe
+  type: vless
+  server: 188.114.97.6
+  port: 8080
+  uuid: 05e7abc2-46e1-4a23-9cdc-173ce17eb0d4
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip
+    headers:
+      Host: round-term-947c.41-332.workers.dev
+- name: 🇹🇭 TH 03 - xiaohe
+  type: vless
+  server: 172.66.214.247
+  port: 8880
+  uuid: e7f6f783-6754-4228-a5d0-aeed84b9949a
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: sweet-sun-c70f.317-ba5.workers.dev
+- name: 🇹🇭 TH 04 - xiaohe
   type: vmess
   server: 118.193.57.167
   port: 49667
@@ -40,6 +66,8 @@ proxy-groups:
   - AUTO
   - 🇹🇭 TH 01 - xiaohe
   - 🇹🇭 TH 02 - xiaohe
+  - 🇹🇭 TH 03 - xiaohe
+  - 🇹🇭 TH 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -47,5 +75,7 @@ proxy-groups:
   proxies:
   - 🇹🇭 TH 01 - xiaohe
   - 🇹🇭 TH 02 - xiaohe
+  - 🇹🇭 TH 03 - xiaohe
+  - 🇹🇭 TH 04 - xiaohe
 rules:
 - MATCH,PROXIES
