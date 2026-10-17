@@ -5,12 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 RO 01 - xiaohe
-  type: ss
-  server: bogging-eyeteeth-fly.freesocks.work
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
+  type: vless
+  server: roxnsk.color-shop.ir
+  port: 8080
+  uuid: e3026ffb-cde6-4cfe-b4b7-f76d5264e969
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇷🇴 RO 02 - xiaohe
   type: vless
   server: edge10.cyrionflare.com
