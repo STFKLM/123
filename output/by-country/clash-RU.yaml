@@ -19,19 +19,12 @@ proxies:
     headers:
       Host: lvi.su
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  type: vless
-  server: 91.185.83.44
-  port: 443
-  uuid: 7955bf18-35c4-412d-aabd-c0b36c793063
+  type: ss
+  server: 185.4.115.146
+  port: 1355
+  cipher: chacha20-ietf-poly1305
+  password: v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa
   udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nguyxejonb.rucdncomp.pro
-  network: ws
-  ws-opts:
-    path: /service/telemetry/0294da469190/
-    headers:
-      Host: nguyxejonb.rucdncomp.pro
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   type: vless
   server: 87.120.166.160
